@@ -5,7 +5,7 @@
 Summary: Qt6 - WebView component
 Name:    qt6-%{qt_module}
 Version: 6.5.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 License: LGPL-3.0-only OR GPL-3.0-only WITH Qt-GPL-exception-1.0
 Url:     http://www.qt.io
@@ -98,6 +98,9 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 
 
 %changelog
+* Thu Jul 13 2023 Jan Grulich <jgrulich@redhat.com> - 6.5.1-2
+- Bump build for private API version change
+
 * Mon May 22 2023 Jan Grulich <jgrulich@redhat.com> - 6.5.1-1
 - 6.5.1
 
