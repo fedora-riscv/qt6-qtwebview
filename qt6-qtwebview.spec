@@ -5,7 +5,7 @@
 Summary: Qt6 - WebView component
 Name:    qt6-%{qt_module}
 Version: 6.6.0
-Release: 1%{?dist}
+Release: 1.rv64%{?dist}
 
 License: LGPL-3.0-only OR GPL-3.0-only WITH Qt-GPL-exception-1.0
 Url:     http://www.qt.io
@@ -14,7 +14,7 @@ Source0: https://download.qt.io/official_releases/qt/%{majmin}/%{version}/submod
 
 # FIXME use/update qt6_qtwebengine_arches
 # 32-bit arches not supported (https://bugreports.qt.io/browse/QTBUG-102143)
-ExclusiveArch: aarch64 x86_64
+ExclusiveArch: aarch64 x86_64 riscv64
 
 BuildRequires: gcc-c++
 BuildRequires: cmake
